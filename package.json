@@ -7,7 +7,10 @@
     "/src",
     "/dist"
   ],
-  "repository": "git@github.com:eKoopmans/html2pdf.js.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eKoopmans/html2pdf.js.git"
+  },
   "keywords": [
     "javascript",
     "pdf-generation",
@@ -48,7 +51,7 @@
     "karma-mocha": "^2.0.1",
     "karma-mocha-reporter": "^2.2.5",
     "karma-sauce-launcher": "^2.0.2",
-    "karma-webpack-preprocessor": "ekoopmans/karma-webpack-preprocessor#update-2021",
+    "karma-webpack-preprocessor": "github:ekoopmans/karma-webpack-preprocessor#update-2021",
     "mocha": "^6.1.4",
     "pdftest": "^0.3.0",
     "rimraf": "^2.6.2",
