@@ -5,14 +5,14 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jspdf"), require("html2canvas"));
+		module.exports = factory(require("jspdf"), require("html2canvas-pro"));
 	else if(typeof define === 'function' && define.amd)
-		define("html2pdf", ["jspdf", "html2canvas"], factory);
+		define("html2pdf", ["jspdf", "html2canvas-pro"], factory);
 	else if(typeof exports === 'object')
-		exports["html2pdf"] = factory(require("jspdf"), require("html2canvas"));
+		exports["html2pdf"] = factory(require("jspdf"), require("html2canvas-pro"));
 	else
-		root["html2pdf"] = factory(root["jspdf"], root["html2canvas"]);
-})(self, function(__WEBPACK_EXTERNAL_MODULE_jspdf__, __WEBPACK_EXTERNAL_MODULE_html2canvas__) {
+		root["html2pdf"] = factory(root["jspdf"], root["html2canvas-pro"]);
+})(self, function(__WEBPACK_EXTERNAL_MODULE_jspdf__, __WEBPACK_EXTERNAL_MODULE_html2canvas_pro__) {
 return /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -579,8 +579,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! jspdf */ "jspdf");
 /* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! html2canvas */ "html2canvas");
-/* harmony import */ var html2canvas__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(html2canvas__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var html2canvas_pro__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! html2canvas-pro */ "html2canvas-pro");
+/* harmony import */ var html2canvas_pro__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(html2canvas_pro__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./utils.js */ "./src/utils.js");
 /* harmony import */ var es6_promise__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! es6-promise */ "./node_modules/es6-promise/dist/es6-promise.js");
 /* harmony import */ var es6_promise__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(es6_promise__WEBPACK_IMPORTED_MODULE_11__);
@@ -772,7 +772,7 @@ Worker.prototype.toCanvas = function toCanvas() {
     // Handle old-fashioned 'onrendered' argument.
     var options = Object.assign({}, this.opt.html2canvas);
     delete options.onrendered;
-    return html2canvas__WEBPACK_IMPORTED_MODULE_9__(this.prop.container, options);
+    return html2canvas_pro__WEBPACK_IMPORTED_MODULE_9__(this.prop.container, options);
   }).then(function toCanvas_post(canvas) {
     // Handle old-fashioned 'onrendered' argument.
     var onRendered = this.opt.html2canvas.onrendered || function () {};
@@ -5733,14 +5733,14 @@ return Promise$1;
 
 /***/ }),
 
-/***/ "html2canvas":
-/*!******************************!*\
-  !*** external "html2canvas" ***!
-  \******************************/
+/***/ "html2canvas-pro":
+/*!**********************************!*\
+  !*** external "html2canvas-pro" ***!
+  \**********************************/
 /***/ (function(module) {
 
 "use strict";
-module.exports = __WEBPACK_EXTERNAL_MODULE_html2canvas__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_html2canvas_pro__;
 
 /***/ }),
 
