@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/eKoopmans/html2pdf.js.git"
+    "url": "git@github.com:thuhoai179/html2pdf.js.git"
   },
   "keywords": [
     "javascript",
@@ -19,9 +19,9 @@
     "canvas"
   ],
   "author": {
-    "name": "Erik Koopmans",
-    "email": "erik@erik-koopmans.com",
-    "url": "https://www.erik-koopmans.com"
+    "name": "ThuHoai",
+    "email": "hoaianhhs1@gmail.com",
+    "url": "https://github.com/thuhoai179"
   },
   "license": "MIT",
   "bugs": {
